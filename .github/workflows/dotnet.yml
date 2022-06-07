@@ -44,7 +44,7 @@ jobs:
     - name: build container and tag 
       run: |
         docker build -t cnsd/album .
-        docker tag cnsd/album:${{ github.run_number}} 309791011032.dkr.ecr.us-east-1.amazonaws.com/cnsd/album:${{ github.run_number}}
+        docker tag cnsd/album 309791011032.dkr.ecr.us-east-1.amazonaws.com/cnsd/album:${{ github.run_number}}
         docker push 309791011032.dkr.ecr.us-east-1.amazonaws.com/cnsd/album:${{ github.run_number}}
        
       
