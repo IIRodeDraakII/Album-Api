@@ -1,0 +1,3 @@
+# Lecture_3
+
+STUDENTNUMMER = 0989742
