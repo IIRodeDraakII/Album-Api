@@ -24,10 +24,15 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal  
+    - name: publish
+      run: dotnet publish -c Release --output ./Release -r linux-x64
 
     - name: Build docker-build
       run : docker build . -t container
+      
+
+      
       
     - name: ECR
       uses: aws-actions/configure-aws-credentials@v1
