@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\Album.Api.csproj": {}
+    "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\Album.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\Album.Api.csproj": {
+    "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\Album.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\Album.Api.csproj",
+        "projectUniqueName": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\Album.Api.csproj",
         "projectName": "Album.Api",
-        "projectPath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\Album.Api.csproj",
+        "projectPath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\Album.Api.csproj",
         "packagesPath": "C:\\Users\\jesse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\obj\\",
+        "outputPath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jesse\\AppData\\Roaming\\NuGet\\NuGet.Config",

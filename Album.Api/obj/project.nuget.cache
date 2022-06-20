@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vdg6+TmMNH+WbiPL0Zwt49I0sQlYNHemLKJqOMp1eKH+YgthgoFG/YZo5SPJRhX1QL9IP4XBDdMg0a5mq3cndg==",
+  "dgSpecHash": "uPystQBD3iys4RRlweBwkMc7RGKF6f5rdOhnxU2Ltmb0IM3wDuvHtH+roTVA1qDIjn3GL3b/rwjOBslYIkONWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Lecture_3\\Album.Api\\Album.Api.csproj",
+  "projectFilePath": "C:\\Users\\jesse\\Documents\\school\\development\\cloud\\Album-Api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jesse\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\jesse\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
