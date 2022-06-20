@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Album.Api.Controllers
 {
@@ -6,10 +9,15 @@ namespace Album.Api.Controllers
     [ApiController]
     public class HealthController : Controller
     {
-    /*        public IActionResult Index()
-            {
-                return View();
-            }*/
+
+
+        [HttpGet]
+            public Task<HealthCheckResult> CheckHealthAsync()
+        {
+                return Task.FromResult(
+                    HealthCheckResult.Healthy("A healthy result."));
+            
+        }
     }
 }
 //

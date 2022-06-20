@@ -44,7 +44,7 @@ namespace Album.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Album.Api v1"));
             }
-            
+
 
             app.UseHttpsRedirection();
 

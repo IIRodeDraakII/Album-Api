@@ -3,8 +3,9 @@
     "",
     "\\Album.Api",
     "\\Album.Api.Tests",
-    "\\Album.Api\\Controllers"
+    "\\Album.Api\\Controllers",
+    "\\Album.Api\\Services"
   ],
-  "SelectedNode": "\\Album.Api\\Controllers\\HealthController.cs",
+  "SelectedNode": "\\Album-Api.sln",
   "PreviewInSolutionExplorer": false
 }
