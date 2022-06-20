@@ -2,6 +2,8 @@ using System;
 using Xunit;
 using Album.Api;
 using Album.Api.Services;
+using System.Net;
+
 namespace Album.Api.Tests
 {
     public class UnitTest1
@@ -11,7 +13,7 @@ namespace Album.Api.Tests
         [Fact]
         public void TestWithName()
         {
-            Assert.Equal("Hello Jessey!", service.Welcome("Jessey"));
+            Assert.Equal($"Hello Jessey! From {Dns.GetHostName()}", service.Welcome("Jessey"));
         }
         [Theory]
         [InlineData(null)]
