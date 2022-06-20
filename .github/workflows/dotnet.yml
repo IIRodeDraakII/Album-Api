@@ -22,11 +22,18 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      
+      run: |
+        cd Album.Api
+        dotnet build --no-restore
+        dotnet publish -c Release --output ../Release -r linux-x64
+        
+          
     - name: Test
-      run: dotnet test --no-build --verbosity normal  
-    - name: publish
-      run: dotnet publish -c Release --output ../Release -r linux-x64
+      run: |
+        cd Album.Api.Tests
+        dotnet test --verbosity normal  
+
 
     - name: Build docker-build
       run : docker build . -t container
