@@ -13,7 +13,7 @@ namespace Album.Api.Tests
         [Fact]
         public void TestWithName()
         {
-            Assert.Equal($"Hello Jessey! From {Dns.GetHostName()}", service.Welcome("Jessey"));
+            Assert.Equal($"Hello Jessey! From {Dns.GetHostName()} V2", service.Welcome("Jessey"));
         }
         [Theory]
         [InlineData(null)]
@@ -21,7 +21,7 @@ namespace Album.Api.Tests
         [InlineData(" ")]
         public void TestWithEmptyName(string name)
         {
-            Assert.Equal("Hello World!", service.Welcome(name));
+            Assert.Equal($"Hello World!  From {Dns.GetHostName()} V2", service.Welcome(name));
         }
 
 
