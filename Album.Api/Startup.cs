@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Album.Api.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace Album.Api
 {
@@ -28,12 +29,20 @@ namespace Album.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<GreetingService>();
+            services.AddScoped<IAlbumService,AlbumService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Album.Api", Version = "v1" });
             });
+
+
+
+            services.AddDbContext<AlbumDbContext>(options =>
+            options.UseNpgsql(Configuration.GetConnectionString("attempt_1")));
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
